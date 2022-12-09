@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="img/icon.svg" rel="icon" />
+    <title>CINEMANIA</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVBAR de CINEMANIA -->
+        <nav class="navbar navbar-expand-lg navbar-sm-right navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icon.svg" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+                CINEMANIA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="index.html">INICIO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="index_series.html">SERIES</a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="index_peliculas.html">PELICULAS</a>
+                    </li>
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            CRÍTICAS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="criticas.html">Página 1</a>
+                            <a class="dropdown-item" href="criticas2.html">Página 2</a>
+                            <a class="dropdown-item" href="criticas3.html">Página 3</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Botón del login -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Login
+                </button>
+
+                <!-- Modal para el login -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="ModalTitleLogin">Login</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body bg-dark">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="InputUserLogin" class="text-white">Usuario</label>
+                                        <input type="text" class="form-control" id="InputUserLogin">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputPasswordLogin" class="text-white">Contraseña</label>
+                                        <input type="password" class="form-control" id="InputPasswordLogin">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón para registrarse -->
+                <button type="button" class="btn btn-secondary ml-3" onclick="location.href='register.html'">
+                    Registrarse
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Slider del contenido que ofrece la página -->
+    <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselCaptions" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/halo_la_serie_slider_index.jpg" class="d-block w-100" width="924" height="260"
+                    alt="imgslider1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="font-weight-bold">Halo: La Serie</h4>
+                    <p>Representando un conflicto épico del siglo 26 entre la humanidad y una amenaza alienígena
+                        conocida como el Pacto,
+                        la serie teje historias personales profundamente dibujadas con acción, aventura y una visión
+                        ricamente imaginada del futuro.</p>
+                    <p><a class="btn btn-primary" disabled>PRÓXIMAMENTE</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Turning_Red_slider_index.jpg" class="d-block w-100" width="924" height="260"
+                    alt="imgslider2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="font-weight-bold">Turning Red</h4>
+                    <p>Mei Lee, una niña de 13 años un poco rara pero segura de sí misma, se debate entre ser la hija
+                        obediente que su madre quiere
+                        que sea y el caos propio de la adolescencia. Ming, su protectora y ligeramente exigente madre,
+                        no se separa nunca de ella
+                        lo que es una situación poco deseable para una adolescente.</p>
+                    <p><a class="btn btn-primary" disabled>PRÓXIMAMENTE</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/That_Dirty_Black_Bag_slider_index.jpg" class="d-block w-100" width="924" height="260"
+                    alt="imgslider3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="font-weight-bold">That Dirty Black Bag</h4>
+                    <p>Una serie cruda, épica y romántica de spaghetti western sobre el lado oscuro del salvaje Oeste.
+                    </p>
+                    <p><a class="btn btn-primary" disabled>PRÓXIMAMENTE</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/BreakingBad_slider_index.jpg" class="d-block w-100" width="924" height="260"
+                    alt="imgslider4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="font-weight-bold">Breaking Bad</h4>
+                    <p>Tras cumplir 50 años, Walter White (Bryan Cranston), un profesor de química de un instituto de
+                        Albuquerque, Nuevo México,
+                        se entera de que tiene un cáncer de pulmón incurable.</p>
+                    <p><a class="btn btn-primary" disabled>PRÓXIMAMENTE</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Better_Call_Saul_slider_index.jpg" class="d-block w-100" width="924" height="260"
+                    alt="imgslider5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="font-weight-bold">Better Call Saul</h4>
+                    <p>Better Call Saul es una serie de televisión estadounidense creada por Vince Gilligan y Peter
+                        Gould. Se trata de un spin-off de
+                        Breaking Bad que consiste en una precuela de su historia.</p>
+                    <p><a class="btn btn-primary" disabled>PRÓXIMAMENTE</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+    <!-- Migaja de pan de Criticas -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Críticas</li>
+            <li class="breadcrumb-item active" aria-current="page">Página 1</li>
+        </ol>
+    </nav>
+
+    <!-- Criticas a las peliculas y series -->
+    <div class="container">
+        <h2><span class="badge badge-secondary">Críticas</span></h2>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 border">
+                <h2 class="featurette-heading">El retorno de <span class="text-muted">la Reina</span></h2>
+                <h6><span class="text-muted">The Walking Dead</span></h6>
+                <p class="lead text-justify">Una de las cosas que más podemos agradecer a los productores y showrunner
+                    de
+                    ‘The Walking Dead’ es que hayan traído de vuelta a Maggie (Lauren Cohan), convertida ahora en la
+                    viuda
+                    de acero. Tantos años de supervivencia y sucesos trágicos le han permitido aceptar la toma de
+                    decisiones
+                    difíciles (como dejar morir a compañeros, si eso ayuda a la supervivencia del resto), pero hay un
+                    fuego
+                    en ella que sigue vivo.
+                </p>
+                <p class="lead text-justify">No es el amor (aunque su hijo Hershel lo es todo). Es el odio. Primero,
+                    contra
+                    los Segadores, el nuevo grupo de malos. ¿Os acordáis que digo más arriba que se le notan las
+                    costuras?
+                    Ésta es una de ellas: unos mercenarios salvajes (como los Salvadores), enmascarados (como los
+                    Susurradores)
+                    y con un sentimiento religioso muy fuerte (aquí el guiño es al Gobernador). Ellos arrebataron
+                    Meridian
+                    a Maggie, y ella está dispuesta a recuperar ese asentamiento porque está repleto de suministros que
+                    necesitan en Alexandria.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="img/The_Walking_Dead_criticas.png" alt="imgcriticas1">
+            </div>
+        </div>
+
+        <br>
+        <hr class="featurette-divider">
+        <br>
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 border">
+                <h2 class="featurette-heading">Libres de <span class="text-muted">ataduras</span></h2>
+                <h6><span class="text-muted">Sonic 2: La Película</span></h6>
+                <p class="lead text-justify">Tal y como apuntó Ruben Fleischer durante una entrevista promocional de su
+                    notable adaptación de la saga 'Uncharted' protagonizada por Tom Holland, buena parte del problema de
+                    los estudios con el desarrollo de este tipo de cintas radica en su afán por recrear la experiencia
+                    original en un medio completamente diferente. La clave para salir con éxito de tamaña empresa es, en
+                    última instancia, tomar inspiración de los juegos y proyectarla sobre una narrativa lo más libre
+                    posible.
+                </p>
+                <p class="lead text-justify">A pesar de que la llegada de juegos como el, en su momento, rompedor 'Sonic
+                    Adventure'
+                    de Dreamcast, añadió un extra de poso argumental al universo de la mascota de sega, 'Sonic: La
+                    película 2' —y,
+                    en consecuencia, su predecesora— se nutren de parten con la ventaja de abordar una franquicia más
+                    preocupada
+                    por brindar una buena experiencia plataformera y un notable diseño de niveles que por articular una
+                    historia
+                    sólida y compleja. Pero esto no se traduce en una mayor sencillez para llevar el filme a buen
+                    puerto.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="img/Sonic2_criticas.jpg" alt="imgcriticas2">
+
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Paginación de criticas -->
+    <nav aria-label="Navegacion de las criticas">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link">Anterior</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="criticas.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="criticas2.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="criticas3.html">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="criticas2.html">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2022 CINEMANIA &middot; <a href="#">Todos los derechos reservados</a> &middot;
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
